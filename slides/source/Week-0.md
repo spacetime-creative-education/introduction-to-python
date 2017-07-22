@@ -185,6 +185,33 @@ Semantic errors: Debugging these are where half your Programming life is going t
 ???
 Analogy: An untrained musician wants to reproduce a sound in his mind, he tries a chord, then by trial-and-error he goes towards the right sound. Thats the most basic debugging.
 
+One of the most important skills you will acquire is debugging. Although it can be frus-
+trating, debugging is one of the most intellectually rich, challenging, and interesting parts
+of programming.
+In some ways, debugging is like detective work. You are confronted with clues, and you
+have to infer the processes and events that led to the results you see.
+
+# Insert a nice pic in this slide
+---
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Introduction to python
+  ### - What is a program?
+  ### - Formal vs Natural language
+  ### - Debugging
+]
+.right-column[
+  Experimental Debugging:
+  > “When you have eliminated the impossible, whatever remains, however im-
+probable, must be the truth.” ~ A Conan Doyle
+
+`Insert Sherlock pic here`
+]
+???
+For some debugging and programming are the same thing. There are two types of programmers,
+one who think of every possible way in which a line would fail the Software before adding it
+to codebase. The second programmer just adds a line, solves the problem at hand, and studies how the software reacts to the change, and like a detective debugs it to stability.
 ---
 <img src="../img/logo.jpg" width="16%" align="right">
 .left-column[
@@ -272,7 +299,25 @@ lets say you want to help someone with a cooking contest, you get a recipe onlin
   >>>
   ```
   ```python
-  print "Hello, beautiful world!"
+  print("Hello, beautiful world!")
+  ```
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Getting your hands dirty
+  ### - Installing Python
+  ### - Text Editor
+  ### - First program
+]
+.right-column[
+  Feel free to get help
+  ```python
+  >>> help()
+  ```
+  ```python
+  >>> help(print)    # would tell you how to use print
   ```
 ]
 ???
