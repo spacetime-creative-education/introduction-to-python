@@ -206,7 +206,7 @@ have to infer the processes and events that led to the results you see.
   > “When you have eliminated the impossible, whatever remains, however im-
 probable, must be the truth.” ~ A Conan Doyle
 
-`Insert Sherlock pic here`
+<img src="../img/sherlock.jpg" width="40%" align="left">
 ]
 ???
 For some debugging and programming are the same thing. There are two types of programmers,
