@@ -229,7 +229,40 @@ to codebase. The second programmer just adds a line, solves the problem at hand,
 ]
 ???
 lets say you want to help someone with a cooking contest, you get a recipe online, its in English and this someone ends up translating it into Tamil before going to the contest and cooking, they compiled the recipe
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Introduction to python
+  ### - What is a program?
+  ### - Formal vs Natural language
+  ### - Debugging
+  ### - Programs that process programs
+]
+.right-column[
 
+### Interpreter vs Compiler
+
+![interpreter](../img/interpreter_vs_compiler.png)
+]
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Introduction to python
+  ### - What is a program?
+  ### - Formal vs Natural language
+  ### - Debugging
+  ### - Programs that process programs
+]
+.right-column[
+An interpreter reads a high-level program and executes it, meaning that it
+does what the program says. It processes the program a little at a time,
+alternately reading lines and performing computations.
+
+A compiler reads the program and translates it completely before the program
+starts running. In this context, the high-level program is called the source code, and the
+translated program is called the object code or the executable. Once a program is compiled,
+you can execute it repeatedly without further translation.
+]
 ---
 <img src="../img/logo.jpg" width="16%" align="right">
 .left-column[

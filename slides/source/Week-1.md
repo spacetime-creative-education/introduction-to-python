@@ -160,7 +160,7 @@ A, S - addition, subtraction
 **Let us do some physics**
 
 **Exercise-1**
-*Insert a nice simple one line physics problem here*
+*Find the momentum of a ball. The velocity of the ball in x axis is 2m/s, and the mass of it is 3kg*
 ]
 ---
 <img src="../img/logo.jpg" width="16%" align="right">
@@ -222,6 +222,32 @@ A, S - addition, subtraction
   ### - Variables
 ]
 .right-column[
+**Examples:**
+```python
+one_dozen = 12
+num_eggs = one_dozen / 2
+print(num_eggs)
+```
+
+```python
+# Buy 2 more eggs
+num_eggs + 2
+```
+
+```python
+customer_name = "Elon Musk"    # A string can be expressed within a ' ' or a " "
+print("Hello, " + customer_name)
+```
+]
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Dive into python
+  ### - Python as a calculator
+  ### - Operators and operands
+  ### - Variables
+]
+.right-column[
   **How to name it?**
 
   > There are only two hard things in Computer Science: cache invalidation and naming things. -- Phil Karlton
@@ -253,7 +279,7 @@ use keywords like if , def , and while as variable names.
 .right-column[
   **There are different kinds of data your program works with, like text data, numbers, maybe complex numbers**
 
-  This essential quality of data is called a `datatype` or casually just `type`.
+  This essential quality of data is called a `datatype` or casually we call it just `type` of the data.
 
   Each variable has a `type`. To find the type of the data you assigned to a variable, simply use `type()`.
 
@@ -495,82 +521,3 @@ NameError: 'pi' is not defined
 try `omega = velocity / pi * 2     # angular velocity`
 Use Brackets.
 ---
-
-### variables
-
-<img src="../img/Variables.png" width="60%" alight="center">
-<img src="../img/logo.jpg" width="16%" align="left">
-
-<section data-background-image="../img/kitchen.jpg">
-        <h2>Color</h2>
-</section>
-
-### variables
-
-<img src="../img/Variables.png" width="60%" alight="center">
-<img src="../img/logo.jpg" width="16%" align="left">
-
-A variable in the classical programming sense is a container which holds
-different types of data. Having data in `named containers` is really useful,
-kind of like having salt and pepper in seperate shakers.
-
-Analogy: Imagine a you are making a dish in your kitchen, then variables
-
-<img src="../img/logo.jpg" width="16%" align="right">
-### Language Introduction
-
-- Declaring variables
-- Python as a calculator
-
-```python
-one_dozen = 12
-num_eggs = one_dozen / 2
-print(num_eggs)
-```
-
-```python
-# Buy 2 more eggs
-num_eggs + 2
-```
-
-<img src="../img/logo.jpg" width="16%" align="right">
-### Language Introduction
-
-- Declaring variables
-- Python as a calculator
-
-```python
-customer_name = "Elon Musk"    # A string can be expressed within a ' ' or a " "
-print("Hello, " + customer_name)
-```
-
-<img src="../img/logo.jpg" width="16%" align="right">
-### Language Introduction
-
-- Declaring variables
-- Python as a calculator
-
-<img src="../img/logo.jpg" width="16%" align="right">
-### Now that you got a feel of python, what do you think are its striking
-features?
-
-- Dynamic typing
-
-- High-level with an interpreter which translates your code to low-level
-language
-
-![interpreter](../img/interpreter_vs_compiler.png)
-
-An interpreter reads a high-level program and executes it, meaning that it
-does what the program says. It processes the program a little at a time,
-alternately reading
-lines and performing computations. Figure 1.1 shows the structure of an
-interpreter.
-
-A compiler reads the program and translates it completely before the program
-starts run-
-ning. In this context, the high-level program is called the source code, and the
-translated
-program is called the object code or the executable. Once a program is compiled,
-you
-can execute it repeatedly without further translation.
