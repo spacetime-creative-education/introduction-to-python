@@ -154,3 +154,24 @@ _level: intermediate_
   False
   ```
 ]
+---
+layout: false
+<img src="../img/logo.jpg" width="16%" align="right">
+
+.right-column[
+**Problem-7**
+
+*Functions you know so far*
+
+  ```
+  print()
+  input()
+  help()
+  len()
+  eval()
+  int()
+  str()
+  bool()
+  %
+  ```
+]
