@@ -120,6 +120,7 @@ layout: false
 eval("2+3*5")    # note the double quotes in the argument (its a F*in string! :P)
 17
 ```
+]
 ---
 layout: false
 <img src="../img/logo.jpg" width="16%" align="right">
@@ -132,6 +133,7 @@ _level: intermediate_
 *User calculator*
 
 *Make a program, that when run will ask the user to enter any valid python expression and return back the results to the user*
+]
 ---
 layout: false
 <img src="../img/logo.jpg" width="16%" align="right">
