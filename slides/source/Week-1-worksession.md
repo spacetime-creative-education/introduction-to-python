@@ -1,5 +1,5 @@
 <img src="../img/logo.jpg" width="16%" align="right">
-# easy blocks of Python
+# Basic blocks of Python
 ### Colors of the palette
 
 <img src="../img/lego.jpg" width="50%" align="right">
