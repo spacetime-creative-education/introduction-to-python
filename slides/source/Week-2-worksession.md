@@ -81,13 +81,9 @@ layout: false
 .right-column[
 **Problem-2**
 
-_level: easy_
+_level: intermediate_
 
-*Print the following message*
-
-  ```
-  One of Python's strengths is its diverse community.
-  ```
+*Make the cursor act like a pencil tool in MS-Paint*
 ]
 ---
 layout: false
@@ -96,20 +92,16 @@ layout: false
 .right-column[
 **Problem-3**
 
-_level: easy_
+_level: intermediate_
 
-*Get firstname and lastname of an user. And print Hello {fullname}*
+*Make a rainbow canvas animation, like one below:*
 
-*Example run:*
+<iframe src="https://giphy.com/embed/SBi6eBtWMUvnO" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/animation-rainbow-colorful-SBi6eBtWMUvnO">via GIPHY</a></p>
 
-  ```
-  Enter firstname: prashanth
-  Enter lastname: gandhiraj
-  Hello, Prashanth Gandhiraj
-  ```
+*Hint: Use create a sine wave using python.*
+
 ]
 ???
-hint: use fullname.title() method
 ---
 layout: false
 <img src="../img/logo.jpg" width="16%" align="right">
@@ -117,113 +109,16 @@ layout: false
 .right-column[
 **Problem-4**
 
-_level: intermediate_
+_level: hard_
 
-*Phone number validation:*
+*Draw a square of size 50x50px at the center of 400x400px canvas.
+Rotate the square in such a way that if the mouse is moved quickly from left to right,
+or right to left, the square rotates quickly in clockwise or anti-clockwise respectively.
+If the mouse movement is slow, the square rotates slowly.
+In short, do physics programming, mapping linear motion to circular motion.
+*
 
-*Ask user to input a phone number. Store it in the variable `phonenumber`*
+*Hint: Go the processing docs and find appropriate functions and variables*
 
-*Check if all the characters in that variaable is a number.*
-
-*Print, The user entered a number: True/False*
-
-*Example run:*
-
-  ```
-  What is your phone number?: 9790744316
-  The user entered a number: True
-  ```
 ]
 ???
-hint: use phonenumber.isnumeric() method
----
-layout: false
-<img src="../img/logo.jpg" width="16%" align="right">
-
-.right-column[
-**Problem-5**
-
-_level: easy_
-
-*Length of the string*
-
-*Take any string. Find the length, as in the number of characters in that string*
-
-*Example run:*
-
-  ```
-  String: Hey there
-  Length: 9
-  ```
-]
-???
-hint: use len() fn
-
----
-layout: false
-<img src="../img/logo.jpg" width="16%" align="right">
-
-.right-column[
-**Eval()**
-
-`eval()` can consume a string and evaluate it like a python expression.
-
-```
-eval("2+3*5")    # note the double quotes in the argument (its a F*in string! :P)
-17
-```
-]
----
-layout: false
-<img src="../img/logo.jpg" width="16%" align="right">
-
-.right-column[
-**Problem-6**
-
-_level: intermediate_
-
-*User calculator*
-
-*Make a program, that when run will ask the user to enter any valid python expression and return back the results to the user*
-]
----
-layout: false
-<img src="../img/logo.jpg" width="16%" align="right">
-
-.right-column[
-**Problem-7**
-
-_level: intermediate_
-
-*Even or odd*
-
-*Make a program that asks user for a number, and if the number is even, prints True, otherwise prints False*
-
-*Example run:*
-
-  ```
-  Number to check if even: 23
-  False
-  ```
-]
----
-layout: false
-<img src="../img/logo.jpg" width="16%" align="right">
-
-.right-column[
-**Problem-7**
-
-*Functions you know so far*
-
-  ```
-  print()
-  input()
-  help()
-  len()
-  eval()
-  int()
-  str()
-  bool()
-  %
-  ```
-]
