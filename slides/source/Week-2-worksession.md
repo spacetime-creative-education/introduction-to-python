@@ -7,7 +7,7 @@
 layout: false
 <img src="../img/logo.jpg" width="16%" align="right">
 
-.right-column[
+
 **MouseX, MouseY**
 
 Processing autoupdates the mouse pointer locations to the variables `MouseX`, `MouseY`.
@@ -15,12 +15,11 @@ Processing autoupdates the mouse pointer locations to the variables `MouseX`, `M
 Just like the predefined variables `displayWidth`, `displayHeight`, `width`, `height`
 Use these to make your program more versatile .
 
-]
 ---
 layout: false
 <img src="../img/logo.jpg" width="16%" align="right">
 
-.right-column[
+
 **Problem-1**
 
 _level: easy_
@@ -37,30 +36,30 @@ circle diameter: 100px
 layout: false
 <img src="../img/logo.jpg" width="16%" align="right">
 
-.right-column[
+
 We saw RGB color model last class and we know how we can get colors using R,G,B channels.
 
 There are many other color models and one other popular one is HSB.
 
 HSB stands for Hue, Saturation and Brightness. It is visualized as a circle (color wheel), with the color placed in 0 to 360degs, Saturation from 0 to 100 says how saturated the color is, and Brightness with values 0 to 100, denotes how bright the color is. Just like RGB, any color that can be produced by this computer screen by be denoted using HSB as well.
-]
+
 ---
 layout: false
 <img src="../img/logo.jpg" width="16%" align="right">
 
-.right-column[
+
 To use HSB color mode in processing, use
 
 ```
 # add this line to setup() or before using this mode in draw()
 colorMode(HSB, 360, 100, 100);    # the args 2,3,4 denotes the range we assign to H,S,B channels.
 ```
-]
+
 ---
 layout: false
 <img src="../img/logo.jpg" width="16%" align="right">
 
-.right-column[
+
 **Problem-1B**
 
 _level: intermediate_
@@ -76,23 +75,23 @@ color range:
   1. H should vary from 0 to 360 for mouseX varying from leftmost to rightmost part of canvas
   2. Brightness should vary from 0 to 100 for mouseY varying from topmost to bottommost part of canvas.
 ```
-]
+
 ---
 layout: false
 <img src="../img/logo.jpg" width="16%" align="right">
 
-.right-column[
+
 **Problem-2**
 
 _level: intermediate_
 
 *Make the cursor act like a pencil tool in MS-Paint*
-]
+
 ---
 layout: false
 <img src="../img/logo.jpg" width="16%" align="right">
 
-.right-column[
+
 **Problem-3**
 
 _level: intermediate_
@@ -103,13 +102,12 @@ _level: intermediate_
 
 *Hint: Use create a sine wave using python.*
 
-]
 ???
 ---
 layout: false
 <img src="../img/logo.jpg" width="16%" align="right">
 
-.right-column[
+
 **Problem-4**
 
 _level: hard_
@@ -123,5 +121,4 @@ In short, do physics programming, mapping linear motion to circular motion.
 
 *Hint: Go the processing docs and find appropriate functions and variables*
 
-]
 ???
