@@ -1,5 +1,5 @@
 <img src="../img/logo.jpg" width="16%" align="right">
-# Conditionals, Recursion and Iteration
+# Conditionals, Recursion and a little bit of Iteration
 ### Lather, rinse, repeat
 
 ---
@@ -18,9 +18,7 @@ layout: false
   * Recursion
     * Debugging
 
-
   * Iteration
-    * Debugging
 ]
 ---
 <img src="../img/logo.jpg" width="16%" align="right">
@@ -331,7 +329,7 @@ A function that calls itself is recursive; the process is called recursion
 
   http://www.openbookproject.net/thinkcs/python/english2e/ch03.html#stack-diagrams
 
-  <img src="../img/stack.png" width="50%" align="right">
+  <!-- <img src="../img/stack.png" width="50%" align="right"> -->
 
   ```python
   def print_twice(param):
@@ -390,7 +388,6 @@ A function that calls itself is recursive; the process is called recursion
   1. Write a function named check_fermat that takes four parameters— a , b , c and n —and that
   checks to see if Fermat’s theorem holds. If n is greater than 2 and it turns out to be true that
   `a**n + b**n = c**n` the program should print, “Holy smokes, Fermat was wrong!” Otherwise the program should print, “No, that doesn’t work.”
-
   2. Write a function that prompts the user to input values for a , b , c and n , converts them to
   integers, and uses `check_fermat` to check whether they violate Fermat’s theorem.
 ]
@@ -407,6 +404,31 @@ A function that calls itself is recursive; the process is called recursion
   **Problem-2.**
 
   Draw a Koch curve using pyprocessing.
+]
+???
+A function that calls itself is recursive; the process is called recursion
+---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Conditionals
+  ## - Boolean Operators
+  ## Recursion
+  ## Iteration
+]
+.right-column[
+  Iteration is the most common way to achieve repition in programming.
+
+  ```python
+  import random
+  while True:
+    condition = random.rand()
+    print("Heads")
+    if condition > 0.5:
+        print("Tails")
+        break
+
+  ```
 ]
 ???
 A function that calls itself is recursive; the process is called recursion
