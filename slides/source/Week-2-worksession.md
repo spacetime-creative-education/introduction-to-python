@@ -72,8 +72,10 @@ Spec:
 canvas size: 400x600px
 circle diameter: 100px
 color range:
-  1. H should vary from 0 to 360 for mouseX varying from leftmost to rightmost part of canvas
-  2. Brightness should vary from 0 to 100 for mouseY varying from topmost to bottommost part of canvas.
+  1. H should vary from 0 to 360 for mouseX varying
+  from leftmost to rightmost part of canvas
+  2. Brightness should vary from 0 to 100 for mouseY
+  varying from topmost to bottommost part of canvas.
 ```
 
 ---
