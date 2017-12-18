@@ -80,3 +80,53 @@ https://processing.org/examples/recursion.html
 
 ???
 ---
+
+layout: false
+<img src="../img/logo.jpg" width="16%" align="right">
+
+
+**Problem-4**
+
+_level: intermediate_
+
+*Finding GCD*
+
+```python
+def gcd(a, b):
+    ...
+
+print(gcd(25, 10))
+```
+should print `5`
+
+In the next slide is the code for finding GCD by recursion. If you want to
+discover GCD() yourself, go ahead. Or else go to the next slide and follow instructions there.
+???
+---
+
+layout: false
+<img src="../img/logo.jpg" width="16%" align="right">
+
+
+**Problem-4**
+
+_level: intermediate_
+
+*Finding GCD*
+
+```python
+def gcd(a, b):
+    if b == 0:
+        return a
+    else:
+        return gcd(b, a % b)
+
+print(gcd(25, 10))
+```
+would print `5`
+
+go to http://pythontutor.com/ and visualize interactively the above code.
+Study the stack-diagrams made by the visualizer to understand the code pattern.
+
+???
+---

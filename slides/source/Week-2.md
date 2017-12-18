@@ -209,25 +209,6 @@ A module exposes functions, classes and even constants like in the case of PI.
   ### - import modules
 ]
 .right-column[
-  ```python
-  # Try these
-  >>> math.sqrt(2)
-  >>> math.exp(1)
-  >>> math.log(10)
-  >>> math.exp(math.log(10))  
-  ```
-
-]
-???
----
-<img src="../img/logo.jpg" width="16%" align="right">
-.left-column[
-  ## Functions
-  ### - Function call
-  ### - Type conversion functions
-  ### - import modules
-]
-.right-column[
   So what other functions are in `math`?
 
   *To understand the contents of a module, it is best to read its documentation.*
@@ -265,7 +246,7 @@ A module exposes functions, classes and even constants like in the case of PI.
   ### - Adding new functions
 ]
 .right-column[
-  To **define** a function you need to use the `def` keyword
+  To define a function you need to use the `def` keyword
   ```python
   def print_lyrics():
       print("Imagine there's no heaven")
