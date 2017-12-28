@@ -270,8 +270,10 @@ length of this list is four
   >>> a[1] = 4
   >>> print(b)
   [1,4,3]
+  >>> b is a
+  True
   ```
-  a and b refers to the same object
+  a and b refers to the same object. You can use the `is` operator to verify if two variables are referring to the same object.
 ]
 ???
 ---
