@@ -62,7 +62,6 @@ Edit the template code below to achieve the output in this GIF.
 layout: false
 <img src="../img/logo.jpg" width="16%" align="right">
 
-
 **Problem-3**
 
 _level: intermediate_
