@@ -57,6 +57,18 @@ _level: intermediate_
 Edit the template code below to achieve the output in this GIF.
 <img src="../img/sine_wave_processing.gif" width="50%" align="right">
 
+*continued next page*
+---
+layout: false
+<img src="../img/logo.jpg" width="16%" align="right">
+
+
+**Problem-3**
+
+_level: intermediate_
+
+*Moving sine wave in PyProcessing*
+
 Code:
 ```
 import time
@@ -75,10 +87,8 @@ def draw():
     for x in range(0, width - 1):
         # find and add one element to the list every iteration
         wave.append(_________ + _________ * math.sin(2*math.pi*(t / 60 + _________)))
-        
+
     # print(wave)
     for x in range(0, width, 5):
         line(x, height/2, x, wave[x])
 ```
-???
----
