@@ -277,3 +277,181 @@ length of this list is four
 ]
 ???
 ---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Lists
+  ## - Aliasing
+  ## - List and strings
+]
+.right-column[
+  How to make a list of characters from a string?
+  Hint: You don't need a for loop.
+
+  ```python
+  >>> string = "hello"
+  >>> chars = list(string)
+  >>> print(chars)
+  ['h', 'e', 'l', 'l', 'o']
+  ```
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Lists
+  ## - Aliasing
+  ## - List and strings
+]
+.right-column[
+  You can split a string into words using `split()` method
+
+  ```python
+  >>> string = "hello how are you?"
+  >>> words = string.split()
+  >>> print(words)
+  ['hello', 'how', 'are', 'you?']
+  ```
+
+  An optional argument called a **delimiter** can be used to break a string at different boundaries.
+  For the above example, the string is split using a *whitespace* delimiter
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Lists
+  ## - Aliasing
+  ## - List and strings
+]
+.right-column[
+  To stitch together a list of words into a string, use the string method `.join()`
+
+  ```python
+  >>> words = ['hello', 'how', 'are', 'you?']
+  >>> # join words with a delimiter inbetween
+  >>> string = " ".join(words)
+  >>> print(string)
+  'hello how are you?'
+
+  ```
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Lists
+  ## - Aliasing
+  ## - List and strings
+  ## - `in` operator
+]
+.right-column[
+  You can split a string into words using `split()` method
+
+  ```python
+  >>> L = [1, 2, 3, 4]
+  >>> 2 in L
+  >>> True
+  >>> 4 in L
+  >>> False
+  ```
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Lists
+  ## - Aliasing
+  ## - List and strings
+  ## - `in` operator
+  ## - Deleting element
+]
+.right-column[
+  You can use the `pop` method to delete elements from a list.
+
+  ```python
+  >>> t = ['a', 'b', 'c', 'd']
+  >>> t.pop()
+  'd'
+  >>> print(t)
+  ['a', 'b', 'c']
+  >>> t.pop(0)
+  'a'
+  >>> print(t)
+  ['b', 'c']
+  ```
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Lists
+  ## - Aliasing
+  ## - List and strings
+  ## - `in` operator
+  ## - Deleting element
+]
+.right-column[
+  You can use the `pop` method to delete elements from a list.
+
+  ```python
+  >>> t = ['a', 'b', 'c', 'd']
+  >>> del t[1]
+  >>> print(t)
+  ['a', 'c', 'd']
+
+  >>> t.remove('d)
+  >>> print(t)
+  ['a', 'c']
+  ```
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Lists
+  ## - Aliasing
+  ## - List and strings
+  ## - `in` operator
+  ## - Deleting element
+  ## - List arguments
+]
+.right-column[
+
+  ```
+  def delete_head(t):
+      del t[0]
+  ```
+
+  ```python
+  >>> letters = ['a', 'b', 'c']
+  >>> delete_head(letters)
+  >>> print letters
+  ['b', 'c']
+  ```
+]
+???
+---<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Lists
+  ## - Aliasing
+  ## - List and strings
+  ## - `in` operator
+  ## - Deleting element
+  ## - List arguments
+]
+.right-column[
+
+  ```
+  def bad_delete_head(t):
+      t = t[1:]
+  ```
+
+  ```python
+  >>> letters = ['a', 'b', 'c']
+  >>> bad_delete_head(letters)
+  >>> print letters
+  ['a', 'b', 'c']
+  ```
+]
+???
+---
