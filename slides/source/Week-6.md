@@ -11,6 +11,7 @@ layout: false
 ]
 .right-column[
   * Dictionary
+
   * Global variables
 
   ]
@@ -360,17 +361,93 @@ if you were given a dictionary that maps from letters to frequencies, you might 
 In the previous example, known is created outside the function, so it belongs to the special
 frame called __main__ .
 
-  ```python
-  def invert_dict(d):
-      inverse = dict()
-      for key in d:
-          val = d[key]
-          if val not in inverse:
-              inverse[val] = [key]
-          else:
-              inverse[val].append(key)
-      return inverse
-  ```
+Variables in __main__ are sometimes called **global** because they
+can be accessed from any function. Unlike **local variables**, which disappear when their
+function ends, global variables persist from one function call to the next.
+]
+???
+---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Global variables
+]
+.right-column[
+```python
+is_printable = True
+
+def printer():
+    if is_printable:
+        print("Hello")
+
+printer()
+```
+
+This prints the word "Hello" as the *global* variable `is_printable` is accesible from the function.
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Global variables
+]
+.right-column[
+Ok, I have another use case. I want to keep track of if a function is executed or not using a global variable.
+```python
+is_executed = False
+
+def foo():
+    is_executed = True
+    # more logic
+
+foo()
+print(is_executed)
+```
+
+Try this and see what happens?
+]
+???
+---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Global variables
+]
+.right-column[
+```python
+is_executed = False
+
+def foo():
+    is_executed = True
+    # more logic
+
+foo()
+print(is_executed)
+```
+
+What happens is the function `foo()` creates a local variable called `is_executed` and when the function ends, that variable goes away. poof.
+]
+???
+---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Global variables
+]
+.right-column[
+To reassign a global variable, use the `global` keyword
+```python
+is_executed = False
+
+def foo():
+    global is_executed    # now python knows which var you are refering to
+    is_executed = True
+    # more logic
+
+foo()
+print(is_executed)
+```
+This time you get `True`.
 ]
 ???
 ---
