@@ -93,14 +93,39 @@ layout: false
   ```python
   >>> len(eng2tam)
   ```
+]
+???
+Python uses an algorithm called `hashtable` in dictionaries, which is really interesting as it takes constant time for the `in` op irrespective of the len of the dict.
 
+More later in the course.
+---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Dictionary
+  ## - `dict` type
+  ## - Ops, methods and Funcs for `dict`
+]
+.right-column[
   2. The `in` op tells you whether a *key* is present in the dictionary
 
   ```python
   >>> 'one' in eng2tam
   True
   ```
+]
+???
+Python uses an algorithm called `hashtable` in dictionaries, which is really interesting as it takes constant time for the `in` op irrespective of the len of the dict.
 
+More later in the course.
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Dictionary
+  ## - `dict` type
+  ## - Ops, methods and Funcs for `dict`
+]
+.right-column[
   3. To get the values of items in a `dict`
   ```python
   >>> eng2tam.values()
@@ -113,7 +138,6 @@ Python uses an algorithm called `hashtable` in dictionaries, which is really int
 
 More later in the course.
 ---
-
 <img src="../img/logo.jpg" width="16%" align="right">
 .left-column[
   ## Dictionary
