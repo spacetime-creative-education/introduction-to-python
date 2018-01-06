@@ -85,7 +85,7 @@ layout: false
 .left-column[
   ## Dictionary
   ## - `dict` type
-  ## - Operations, methods and Functions for `dict`
+  ## - Ops, methods and Funcs for `dict`
 ]
 .right-column[
   1. Just like in `list`, to get the number of elements in a `dict` do this:
@@ -118,7 +118,7 @@ More later in the course.
 .left-column[
   ## Dictionary
   ## - `dict` type
-  ## - Operations, methods and Functions for `dict`
+  ## - Ops, methods and Funcs for `dict`
   ## - What can I do with `dict`?
 ]
 .right-column[
@@ -133,7 +133,7 @@ More later in the course.
 .left-column[
   ## Dictionary
   ## - `dict` type
-  ## - Operations, methods and Functions for `dict`
+  ## - Ops, methods and Funcs for `dict`
   ## - What can I do with `dict`?
 ]
 .right-column[
@@ -156,7 +156,7 @@ More later in the course.
 .left-column[
   ## Dictionary
   ## - `dict` type
-  ## - Operations, methods and Functions for `dict`
+  ## - Ops, methods and Funcs for `dict`
   ## - What can I do with `dict`?
 ]
 .right-column[
@@ -181,7 +181,7 @@ More later in the course.
 .left-column[
   ## Dictionary
   ## - `dict` type
-  ## - Operations, methods and Functions for `dict`
+  ## - Ops, methods and Funcs for `dict`
   ## - What can I do with `dict`?
 ]
 .right-column[
@@ -206,7 +206,7 @@ More later in the course.
 .left-column[
   ## Dictionary
   ## - `dict` type
-  ## - Operations, methods and Functions for `dict`
+  ## - Ops, methods and Funcs for `dict`
   ## - What can I do with `dict`?
 ]
 .right-column[
@@ -225,9 +225,6 @@ More later in the course.
 <img src="../img/logo.jpg" width="16%" align="right">
 .left-column[
   ## Dictionary
-  ## - `dict` type
-  ## - Operations, methods and Functions for `dict`
-  ## - What can I do with `dict`?
   ## - Reverse Lookup
 ]
 .right-column[
@@ -252,9 +249,6 @@ More later in the course.
 <img src="../img/logo.jpg" width="16%" align="right">
 .left-column[
   ## Dictionary
-  ## - `dict` type
-  ## - Operations, methods and Functions for `dict`
-  ## - What can I do with `dict`?
   ## - Reverse Lookup
   ## - Inverse of a dict
 ]
@@ -279,9 +273,6 @@ if you were given a dictionary that maps from letters to frequencies, you might 
 <img src="../img/logo.jpg" width="16%" align="right">
 .left-column[
   ## Dictionary
-  ## - `dict` type
-  ## - Operations, methods and Functions for `dict`
-  ## - What can I do with `dict`?
   ## - Reverse Lookup
   ## - Inverse of a dict
   ## - Memoization
@@ -297,9 +288,6 @@ if you were given a dictionary that maps from letters to frequencies, you might 
 <img src="../img/logo.jpg" width="16%" align="right">
 .left-column[
   ## Dictionary
-  ## - `dict` type
-  ## - Operations, methods and Functions for `dict`
-  ## - What can I do with `dict`?
   ## - Reverse Lookup
   ## - Inverse of a dict
   ## - Memoization
@@ -326,9 +314,6 @@ if you were given a dictionary that maps from letters to frequencies, you might 
 <img src="../img/logo.jpg" width="16%" align="right">
 .left-column[
   ## Dictionary
-  ## - `dict` type
-  ## - Operations, methods and Functions for `dict`
-  ## - What can I do with `dict`?
   ## - Reverse Lookup
   ## - Inverse of a dict
   ## - Memoization
