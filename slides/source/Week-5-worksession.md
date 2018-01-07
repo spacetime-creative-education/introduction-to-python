@@ -91,3 +91,5 @@ def draw():
     for x in range(0, width, 5):
         line(x, height/2, x, wave[x])
 ```
+???
+wave.append(height /2 + height / 2 * math.sin(2*math.pi*(t / 60 + x / float(width))))
