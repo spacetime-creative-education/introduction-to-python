@@ -12,7 +12,6 @@ _level: easy_
 
 *Define a function which returns a dictionary where the keys are numbers between 1 and n (both included), and the values are square of keys. Note, `n` is taken as an argument to the function. Call the function with n=5, and print the results*
 
-```
 ???
 ref: https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises.txt
 ---
