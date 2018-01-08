@@ -398,11 +398,11 @@ length of this list is four
   >>> del t[1]
   >>> print(t)
   ['a', 'c', 'd']
-
-  >>> t.remove('d)
+  >>> t.remove('d')
   >>> print(t)
   ['a', 'c']
   ```
+
 ]
 ???
 ---
@@ -430,7 +430,8 @@ length of this list is four
   ```
 ]
 ???
----<img src="../img/logo.jpg" width="16%" align="right">
+---
+<img src="../img/logo.jpg" width="16%" align="right">
 .left-column[
   ## Lists
   ## - Aliasing
@@ -451,6 +452,407 @@ length of this list is four
   >>> bad_delete_head(letters)
   >>> print letters
   ['a', 'b', 'c']
+  ```
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+]
+.right-column[
+
+  Tuples are comma seperated list of values.
+
+  ```python
+  >>> t = 1, 2, 3, 4
+  >>> print(t)
+  (1, 2, 3, 4)
+  >>> type(t)
+  <class 'tuple'>
+  ```
+]
+???
+---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+]
+.right-column[
+
+  Although not required, the most common way to define tuples are using paranthesis
+
+  ```python
+  >>> t = (1, 2, 3, 4)
+  ```
+
+  Just putting a value in paranthesis won't make it a tuple.
+
+  ```python
+  >>> s = ("a")
+  >>> type(s)
+  <class 'str'>
+  ```
+
+  If you need to make a tuple with just one element, you can do this:
+
+  ```python
+  >>> t = ("a",)    # notice the comma
+  ```
+]
+???
+---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+]
+.right-column[
+
+  You can also create tuples using the `tuple()` function.
+
+  ```python
+  >>> t = tuple()
+  >>> x = tuple([1,2,3])
+  >>> x
+  (1,2,3)
+  >>> tuple("harry")
+  ('h', 'a', 'r', 'r', 'y')
+  ```
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+]
+.right-column[
+
+  Tuple has many similarities to `list`. You can access elements using `[]`.
+
+  ```python
+  >>> x = tuple([1,2,3,4,5,6,7])
+  >>> x[2]
+  3
+  >>> x[2:5]
+  (3,4,5)
+  ```
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+]
+.right-column[
+
+  So why do we have tupples again? Like I can just use list right?
+
+  Ans. Tuples are **immutable**
+
+  You can't modify any element of a tuple.
+  ```python
+  >>> t = (1, 4, 6)
+  >>> t[1] = 6
+  Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+  TypeError: 'tuple' object does not support item assignment
+  ```
+]
+???
+---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+  ## - Swapping and Tuple assignment
+]
+.right-column[
+
+  If you have two variables, Generally we can swap them like this:
+
+  ```python
+  >>> a = 5
+  >>> b = 10
+  >>> temp = a
+  >>> a = b
+  >>> b = temp
+  >>> del temp
+  ```
+  Is there a better way?
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+  ## - Swapping and Tuple assignment
+]
+.right-column[
+
+  **Tuple assignment**
+
+  Before finding out how to swap better, picture this. Tuples are comma seperated values.
+
+  ```python
+  >>> a = 1, 2    # this is a tuple, even without the ()
+  ```
+
+  In python if you comma seperate variables on the left hand side, they are treated as tuples too.
+  which means:
+
+  ```python
+  a, b = 1, 2
+  ```
+  will assign `1` to `a` and `2` to `b` respectively. Awesome, that's handy.
+
+]
+???
+---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+  ## - Swapping and Tuple assignment
+]
+.right-column[
+
+  **Tuple assignment**
+  Swapping in python is probably the most elegant among all languages. To swap variables in python you just do:
+
+  ```python
+  >>> a = 5
+  >>> b = 10
+  >>> b, a = a, b    # that's it
+  ```
+  The right side has a tuple of two variables, its **unpacked** and assigned into another tuple of two variables on the left side.
+
+]
+???
+---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+  ## - Swapping and Tuple assignment
+]
+.right-column[
+
+  Here is an exception:
+
+  ```python
+  >>> a = 1, 2, 3    # works, type(a) == 'tuple'
+  >>> a, b = 1, 2    # works  type(a) == 'int'
+  >>> a, b = 1, 2, 3 # Wrong!
+  ValueError: too many values to unpack
+  ```
+]
+???
+---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+  ## - Swapping and Tuple assignment
+  ## - Usage patterns
+]
+.right-column[
+
+  The nature of tuple brings out interesting code patterns
+
+  ```python
+  >>> email = "hello@spacetime.education"
+  >>> usernm, domain = email.split("@")
+  ```
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+  ## - Swapping and Tuple assignment
+  ## - Usage patterns
+]
+.right-column[
+
+  **Tuple as return values**
+
+  Technically a function only returns one value. But if that value is a tuple, it makes it equivalent to return multiple values.
+
+  ```python
+  def divmod(dividend, divisor):
+      """
+      return the reminder and quotient of division of two numbers
+      """
+      Q = dividend // divisor
+      R = dividend % divisor
+      return Q, R    # tuple
+
+  >>> q, r = divmod(15, 2)
+  >>> q, r
+  (7, 1)
+  ```
+]
+???
+---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+  ## - Swapping and Tuple assignment
+  ## - Usage patterns
+  ## - Functions - Variable length arguments
+]
+.right-column[
+
+  Sometimes we cannot be sure how many arguments does a function we define should consume.
+
+  So a parameter, which starts with `*` gathers all arguments into a tuple
+
+  ```python
+  def print_all(*args):
+      for x in args:
+          print(x)
+
+  >>> t = (1, 2, "hello", True)
+  >>> print_all(t)
+  1
+  2
+  'hello'
+  True
+  ```
+  Before learning this snippet, how would you have implemented a multi arguments logic for functions?
+]
+???
+def print_all(args):
+    if not isinstance(args, list):
+        raise TypeError
+
+    for x in args:
+         print(x)
+
+Technically this is just one parameter. so the function call should be:
+`>>> print_all([1, 2, "hello", True])`
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+  ## - Swapping and Tuple assignment
+  ## - Usage patterns
+  ## - Functions - Variable length arguments
+  ## - `zip()` function
+]
+.right-column[
+
+  `zip()` is a builtin function that takes two or more sequences and zips them into a zip object. This can be typecasted to list of tuples using the `list()` function.
+
+  ```python
+  >>> s = "abcde"
+  >>> l = [1,2,3,4,5,6,7,8]
+  >>> print(list(zip(s, l)))
+  [('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', 5)]
+  ```
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+  ## - Swapping and Tuple assignment
+  ## - Usage patterns
+  ## - Functions - Variable length arguments
+  ## - `zip()` function
+]
+.right-column[
+
+  `zip()` is handy when you want to traverse through two sequences within the same loop.
+
+  ```python
+  >>> s = "abcde"
+  >>> l = [1,2,3,4,5,6,7,8]
+  >>> for c, el in zip(s, l):    # not the multi iteration syntax "for c, el"
+          print(c, el)
+  'a', 1
+  'b', 2
+  'c', 3
+  'd', 4
+  'e', 5
+  ```
+]
+???
+---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+  ## - Swapping and Tuple assignment
+  ## - Usage patterns
+  ## - Functions - Variable length arguments
+  ## - `zip()` function
+  ## - `enumerate()` function
+]
+.right-column[
+
+  If you need to traverse the elements of a sequence and their indices, you can use the built-in
+  function enumerate
+
+  ```python
+  >>> for index, element in enumerate('abc'):
+          print index, element
+  0 a
+  1 b
+  2 c
+  ```
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+  ## - comparison
+]
+.right-column[
+  ```python
+  >>> (0, 1, 2) < (0, 1, 3)
+  True
+  >>> (0, 1, 2000000) < (0, 2, 3)
+  True
+  ```
+  Python starts from the first element of both sequences and compares them. If the first element of both sequences are equal, python takes the second element and compares.
+
+  If any set elements are different, then it returns the comaprison result and stops any more comparison.
+
+  In the above example, `1 < 2` returns True. So the interpreter never reaches to compare `2000000` with `3`.
+
+]
+???
+---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Tuples
+  ## - comparison
+  ## - DSU pattern
+]
+.right-column[
+  As a consequence of the above comparison we can leverage it in a pattern called **DSU**, which stands for **decorate, sort, undecorate**.
+
+  Let us sort a list of words by the length of each word.
+  ```python
+  def sort_by_len(words):
+      # D
+      t = []
+      for word in words:
+          t.append((len(word), word))    # append a tuple
+
+      t.sort()
+
+      res = []
+      for l, word in t:    # unpack the tuple in a loop
+          res.append(word)
+
+      return res    # this is a new list of words sorted by length of each word.
   ```
 ]
 ???

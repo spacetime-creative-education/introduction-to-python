@@ -143,6 +143,26 @@ More later in the course.
   ## Dictionary
   ## - `dict` type
   ## - Ops, methods and Funcs for `dict`
+]
+.right-column[
+  4. To get both the keys and values as a dict object of list of tuples, use `.items()`
+
+  ```python
+  >>> eng2tam.items()
+  dict_values([('one','onnu'), ('two', 'rendu'), ('three', 'moonu')])
+  ```
+  You can traverse through the values like a list. Or make it into a pure python list by passing it into the `list()` function.
+]
+???
+Python uses an algorithm called `hashtable` in dictionaries, which is really interesting as it takes constant time for the `in` op irrespective of the len of the dict.
+
+More later in the course.
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## Dictionary
+  ## - `dict` type
+  ## - Ops, methods and Funcs for `dict`
   ## - What can I do with `dict`?
 ]
 .right-column[
