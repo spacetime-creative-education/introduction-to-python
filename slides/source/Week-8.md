@@ -336,3 +336,44 @@ def grow_rectangle(rect, dwidth, dheight):
 ]
 ???
 ---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## User defined datatypes
+  ## - Point
+  ## Attributes
+  ## - Rectangle
+  ## Debugging
+]
+.right-column[
+When you start working with objects, you are likely to encounter some new exceptions. If
+you try to access an attribute that doesn’t exist, you get an `AttributeError`:
+
+```
+  >>> p = Point()
+  >>> print p.z
+  AttributeError: Point instance has no attribute 'z'
+```
+]
+???
+---
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## User defined datatypes
+  ## - Point
+  ## Attributes
+  ## - Rectangle
+  ## Debugging
+]
+.right-column[
+If you are not sure whether an object has a particular attribute, you can use the built-in
+function `hasattr`:
+```
+  >>> hasattr(p, 'x')
+  True
+  >>> hasattr(p, 'z')
+  False
+```
+]
+???
+---
