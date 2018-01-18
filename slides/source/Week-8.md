@@ -103,14 +103,7 @@ layout: false
   ^^This above is the class definition. Think of it like a function definition.
 
   The word `object` there passed to it just tells python that we are going to create customized objects. So treat it like you treat any other python object.
-<!--
-  Remember:
-  In python all data are objects.
 
-  ```python
-  >>> print(Point)
-  <class '__main__.Point'>    # the class object
-  ``` -->
 ]
 ???
 ---
@@ -134,6 +127,27 @@ layout: false
 ]
 ???
 ---
+
+<img src="../img/logo.jpg" width="16%" align="right">
+.left-column[
+  ## User defined datatypes
+  ## - Point
+  ## Attributes
+]
+.right-column[
+  You can assign values to an instance using dot notation:
+
+  ```python
+  p = Point()    # p is a point object
+  p.x = 3
+  p.y = 4
+  ```
+
+  This is similar to `math.pi` syntax
+]
+???
+---
+
 <img src="../img/logo.jpg" width="16%" align="right">
 .left-column[
   ## User defined datatypes
@@ -149,27 +163,6 @@ layout: false
   >>> p.y = 4
 ]
 ```
-???
----
-<img src="../img/logo.jpg" width="16%" align="right">
-.left-column[
-  ## User defined datatypes
-  ## - Point
-  ## Attributes
-]
-.right-column[
-  You can read the attributes using the dot notation as well
-
-  ```python
-  >>> p = Point()    # p is a point object
-  >>> p.x = 3
-  >>> p.y = 4
-  >>> print(p.x)    # Reading the attribute
-  3.0
-  ```
-
-  This is similar to `math.pi` syntax.
-]
 ???
 ---
 
