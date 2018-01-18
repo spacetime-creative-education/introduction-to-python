@@ -134,27 +134,6 @@ layout: false
 ]
 ???
 ---
-
-<img src="../img/logo.jpg" width="16%" align="right">
-.left-column[
-  ## User defined datatypes
-  ## - Point
-  ## Attributes
-]
-.right-column[
-  You can assign values to an instance using dot notation:
-
-  ```python
-  p = Point()    # p is a point object
-  p.x = 3
-  p.y = 4
-  ```
-
-  This is similar to `math.pi` syntax
-]
-???
----
-
 <img src="../img/logo.jpg" width="16%" align="right">
 .left-column[
   ## User defined datatypes
