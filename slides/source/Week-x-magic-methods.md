@@ -70,11 +70,14 @@ layout: false
 ]
 .right-column[
     Try creating an instance of `LooneyToons` and indexing out the 3rd character.
+
     ```python
     toons = LooneyToons()
     print(toons[2])
     ```
+
     We get:
+
     ```python
     File "<ipython-input-4-40a7b76d28ff>", line 1, in <module>
       toons[2]
@@ -95,6 +98,7 @@ layout: false
 
     *How?*
     Add the `__getitem__()` method
+
     ```python
     class LooneyToons(object):
         def __init__(self):
@@ -105,7 +109,9 @@ layout: false
 
     print(toons[2])
     ```
+
     We get:
+
     ```python
     Sylvester
     ```
@@ -156,9 +162,11 @@ layout: false
     characters = LooneyToons()
     print("Tweety" in characters)
     ```
+
     ```python
     ValueError: Key 6 cannot be reached
     ```
+
     What's happening now?
 
     There are definitely more than 6 items. If it failed, why didn't it fail for item 1 itself?
@@ -214,10 +222,13 @@ layout: false
         for item in toons:
             print(item)
     ```
+
     We get:
+
     ```python
     ValueError: Key 6 cannot be reached
     ```
+
     Same error? So `__getitem__` is used unnecesarily.
 
     So how to fix this?
@@ -259,7 +270,9 @@ layout: false
         toons = LooneyToons()
         print(len(toons))
     ```
+
     More errors, no `len()`. Fix?
+
     ```python
         ...
         def __len__(self):
@@ -275,6 +288,7 @@ layout: false
 ]
 .right-column[
     That's some basics of magic functions. There are a lot more that can be overridden!
+
     and many cool features can be coded using them.
 ]
 ---
