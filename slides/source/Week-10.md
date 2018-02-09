@@ -63,6 +63,7 @@ By creating awesome class definitions
   def factorial(n):
       return return 1 if n == 0 else n * factorial(n - 1)
   ```
+
   *Not the best way to write factorial, but works for clean inputs*
 ]
 ???
@@ -286,11 +287,11 @@ By creating awesome class definitions
 .right-column[
   You can define a set using `{}` just like dictionary, the only difference being sets are not `key-value` pairs, they only have values.
 
-    ```python
-    >>> s = {}
-    >>> dice = {1,2,3,4,5,6}
-    >>> suites = {'heart', 'spade', 'club', 'diamond'}
-    ```
+  ```python
+  >>> s = {}
+  >>> dice = {1,2,3,4,5,6}
+  >>> suites = {'heart', 'spade', 'club', 'diamond'}
+  ```
 ]
 ???
 ---
@@ -304,17 +305,17 @@ By creating awesome class definitions
 .right-column[
   Unique list. If you want a list of items to have only unique items, just convert it into a set, and if required convert back into a list.
 
-    ```python
-    >>> l = [1,2,2,3,3,3,4,4,4,4]
-    >>> s = set(l)
-    >>> for x in s:
-            print(x)
-    1
-    2
-    3
-    4
-    >>>
-    ```
+  ```python
+  >>> l = [1,2,2,3,3,3,4,4,4,4]
+  >>> s = set(l)
+  >>> for x in s:
+          print(x)
+  1
+  2
+  3
+  4
+  >>>
+  ```
 ]
 ???
 ---
