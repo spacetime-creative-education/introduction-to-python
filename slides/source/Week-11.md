@@ -12,7 +12,8 @@ layout: false
 ]
 .right-column[
   * Understand `Class` Inheritance
-  * Start Test dri
+  
+  * Start Test driven development
 
   ]
 ???
