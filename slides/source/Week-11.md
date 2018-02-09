@@ -317,7 +317,7 @@ By creating awesome class definitions
   ## - Card objects
 ]
 .right-column[
-  In some games, cards are moved from one hand to another, or from a hand back to the deck. You can use move_cards for any of these operations: self can be either a Deck or a Hand, and hand , despite the name, can also be a Deck .
+  In some games, cards are moved from one hand to another, or from a hand back to the deck. You can use move_cards for any of these operations: self can be either a Deck or a Hand, and hand , despite the name, can also be a Deck.
 ]
 ???
 ---
